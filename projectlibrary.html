@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link href="https://www.flaticon.com/free-icon/github_3291695">
+    <link rel="stylesheet" href="projectlibrary.css">
+    <script defer src="projectlibrary.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+    <link href="https://fonts.google.com/">
+</head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <h1>AnamCara's Library</h1>
+                <button id="newBook">New Book</button>
+            </header>
+            <main class="main">
+                <div class="books">
+                    <div id="bookList">
+                    </div>
+                </div>
+            </main>p
+            <footer class="footer">
+                <div>
+                    Copyright © <img src="github.png" alt="GitHub logo"> 
+                    <a href="https://github.com/MRachel1">Rachel M 2024</a>
+                </div>
+            </footer>
+        </div>
+
+        <div class="modal">
+            <dialog id="dialog">
+                <form id="form" method="dialog">
+                    <p>Add a new book to the library</p>
+                    <div id="textbox">
+                        <label for="title">Title:</label>
+                        <input type="text" id="title" name="title" required>
+                    </div>
+                    <div id="textbox">
+                        <label for="author">Author:</label>
+                        <input type="text" id="author" name="author" required>
+                    </div>
+                    <div id="textbox">
+                        <label for="pages">Pages:</label>
+                        <input type="number" id="pages" name="pages" required>
+                    </div>
+                    <div id="checkbox">
+                        <label for="read">Read: </label>
+                        <input type="checkbox" id="read" name="read">
+                    </div>
+                    <div id="submit">
+                        <input type="submit" id="submit" value="Submit">
+                    </div>
+                    <div id="cancel">
+                        <input type="button" id="cancelBtn" value="Cancel">
+                    </div>
+                </form>
+            </dialog>
+        </div>
+    </body>
+</html>

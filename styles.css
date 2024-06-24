@@ -1,0 +1,302 @@
+body {
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #F9F9AB;
+}
+
+.top-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+.top-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #330C2A;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 40%, 0% 100%);
+    /* background-image:linear-gradient(-200deg, #15291C 50%, #f9f9ab 50%); */
+    z-index: -1;
+}
+
+.top-item {
+    display: flex;
+    align-items: center;
+    padding: 3rem 3rem 0 3rem;  
+    max-width: 95%;
+    z-index: 2;
+}
+
+#img {
+    background-image: url(https://img.freepik.com/free-photo/futuristic-business-scene-with-ultra-modern-ambiance_23-2151003798.jpg?t=st=1715174736~exp=1715178336~hmac=e7febb826302382574ea65fee65e932e6cee68f4bb6fa2a0569e8b0a3d201317&w=740);
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    align-items: end;
+    overflow: hidden;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+#img h1{
+    color: #F9F9AB ;
+    font-family:"Lavishly Yours",cursive;
+    font-weight: 900;
+    font-size: 2.5rem;
+    position: relative;
+    left: 30%;
+}
+
+#Me {
+    color:#F9F9AB;
+    font-size: 1.5rem;
+    /* border-radius: 5px; */
+    width: 90%;
+    background-color:#330C2A;
+    box-shadow: 2px 5px 7px 0px rgba(0,0,0,0.35);
+    padding: 1rem;
+    border: 1px solid #F9F9AB;
+}
+
+main {
+    padding: 3rem;
+}
+
+ .my-work{ 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 3rem;
+    padding: 1rem 0;
+}
+
+#img h1:hover{
+    cursor: pointer;
+    transform: scale(1.1, 1);
+    background: -webkit-linear-gradient(rgb(188, 12, 241), #F9F9AB);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#item1:hover{
+    cursor: pointer;
+    transform:scale(1.1, 1); 
+    color: rgb(188, 12, 241); 
+}
+
+#item2:hover {
+    cursor: pointer;
+    transform:scale(1.1, 1); 
+    color: rgb(188, 12, 241);
+}
+
+#item3:hover {
+    cursor: pointer;
+    transform:scale(1.1, 1); 
+    color: rgb(188, 12, 241); 
+}
+
+#item4:hover {
+    cursor: pointer;
+    transform: skewx(5deg); 
+    color: rgb(188, 12, 241);
+}
+
+#item5:hover {
+    cursor: pointer;
+    transform: skewx(5deg);  
+    color: rgb(188, 12, 241);
+}
+
+#item6:hover {
+    cursor: pointer;
+    transform: skewx(5deg);
+    color: rgb(188, 12, 241);
+}
+
+h3{
+     padding:1rem; 
+     color: #15291C;
+}
+
+h2{
+    background: linear-gradient(rgb(188, 12, 241), #F9F9AB);
+    background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+a  {
+    color:#000;
+    text-decoration: none;
+}
+
+.bottom-section :hover{
+    color: rgb(188, 12, 241);
+}
+
+#item1, #item2, #item3 {
+    color: #F9F9AB;
+    background-image: linear-gradient(0deg, #fdfdfe 50%,#330c2a 50%);
+    box-shadow: 2px 3px 7px 0px rgba(0,0,0,0.35);
+    text-align: center;
+    font-family: "Charis SIL",serif;
+    font-size: 1.5rem;
+    padding: 3rem 2rem 2rem 0; 
+}
+
+#item4, #item5, #item6{
+    color: #F9F9AB;
+    background-image: linear-gradient(0deg, #Fdfdfe 50%,#330c2a 50%);
+    box-shadow: 2px 3px 7px 0px rgba(0,0,0,0.35);
+    text-align: center;
+    font-family: "Charis SIL",serif;
+    font-size: 1.5rem;
+    padding: 3rem 1rem;
+}
+
+.bottom-section{
+    background-color:#330C2A;
+    color: #F9F9AB ;
+    font-size: 1.4rem;
+    display: flex;
+    padding: 2rem;
+    justify-content:space-between;
+}
+
+.bottom-right{
+    background-image: url("https://img.freepik.com/free-photo/woman-using-digital-tablet-technology_23-2149491855.jpg?t=st=1715175691~exp=1715179291~hmac=b98d5549de1c5515e9759504a1f446f98394f74aa2f9fe5dcf9b88fb8ec4aa1b&w=360");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40rem;
+    padding-bottom: 40%;
+}
+
+ #num, #num2 {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+} 
+
+ .social {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: end;
+    gap: 1rem;
+    color: black;
+}
+
+#social {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content:start;
+    gap: 1rem;
+} 
+
+ @media (max-width: 480px){
+    .top-item{
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: none;
+        padding: 1rem;
+    }
+
+    .top-section::before{
+        bottom: 22rem;
+    }
+
+    .my-work{ 
+        grid-template-columns: 1fr;
+        grid-template-rows: none;
+    }
+
+    main{
+        padding: 1rem;
+    }
+
+    .bottom-section{
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .bottom-right{
+        width: 100%;
+        padding-bottom: 50%;
+    }
+}  
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .top-item{
+        flex-direction:row;
+        padding: 5rem;
+    }
+
+
+    #img h1{
+        position: relative;
+        top:-12rem;
+        left: 7rem;
+    }
+
+    #img {
+        position: relative;
+        top: -5rem;
+        margin-bottom: 2.5rem;
+        left: 10rem;
+        width: 50rem; 
+        z-index: 1;
+        /* shape-outside: image();  */
+    }
+
+    #Me{
+    position: relative;
+    top: 7rem;
+    padding: 1rem; 
+    width: 100%;
+    /* shape-outside: image(); */
+    text-align-last:right; 
+    text-align:right;
+    margin-top: 2.5rem;
+    margin-right: 5rem;
+    }
+
+    .top-section::before{
+        bottom: 2rem;
+    }
+
+    .my-work{ 
+        grid-template-columns: 1fr 1fr;
+    }
+
+    main{
+        padding: 1rem;
+    }
+
+    .bottom-section{
+        flex-direction: row;
+        gap: 1rem;
+        margin-top: 4rem;
+    }
+
+    .bottom-right{
+        width: 100%;
+        padding-bottom: 50%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    /* body {
+      font-size: 16px; 
+    } */
+}

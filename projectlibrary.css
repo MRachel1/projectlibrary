@@ -1,0 +1,168 @@
+body{
+    /* background-image: url(./WhatsApp_Image_lib_2.jpg); */
+    background-image: url(https://img.freepik.com/free-photo/delicate-branch-black_23-2147811271.jpg?t=st=1719065188~exp=1719068788~hmac=ed54994fa39eac9631181cb8b497d4cb8b2a911b4f80006fc07315151ce62d67&w=740);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin: 0;
+}
+
+.container .header {
+    grid-row: 1 / 2;
+    margin: 15px;
+    text-align: center;
+    font-size: x-large;
+}
+
+.container .header button {
+    background-color: #261B50;
+    color: #FFF887;
+    border: none;
+    border-radius: 3rem;
+    width: 200px;
+    height: 50px;
+    font-size: large;
+}
+
+.container .header button:hover {
+    background-color: #120A0B;
+    cursor: pointer;
+}
+
+.container .header h1 {
+    color: #FFF887;
+    font-family: "Italianno", cursive;
+    text-align: center;
+    font-size: 5rem;
+}
+
+.container .main {
+    grid-row: 2 / 3;
+}
+
+.container .main .books #bookList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 0.5fr));
+    grid-auto-rows: 300px;
+}
+
+.container .main .books #bookList .books {
+    margin: 15px;
+    padding: 1rem;
+    background-color: #120A0B;
+    border-left: 3px solid #FFF887;
+    color: #FFF887;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container .main .books #bookList .books #bookBtn {
+    display: flex;
+    gap: 2rem;
+}
+
+.container .main .books #bookList .books #bookBtn button {
+    width: 100px;
+    height: 25px;
+    background-color: #120A0B;
+    color: #FFF887;
+    border: none;
+    border-radius: 10px;
+}
+
+.container .main .books #bookList .books #bookBtn button:hover {
+    background-color: #261B50;
+    cursor: pointer;
+}
+
+.footer {
+    color: #FFF887;
+    grid-row: 3 / 4;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+a {
+    color: #FFF887;
+}
+
+.footer img {
+    background-color: #FFF887;
+    width: 2rem;
+    height: auto;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+dialog {
+    background-image: url(./WhatsApp_Image_lib_2.jpg);
+    color: #FFF887;
+    position: absolute;
+    left: 50%;
+    top: 50%; 
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 400px;
+    font-size: large;
+    font-weight: 900;
+}
+
+form {
+    display: grid;
+    grid-template: repeat(6, 1fr) / 0.5fr 0.5fr;
+    width: 100%;
+    height: 100%;
+}
+
+form p, form #checkbox {
+    grid-column: 1 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form #checkbox label {
+    padding-right: 10px;
+}
+
+form #checkbox input {
+    accent-color: #261b50;
+}
+
+form #textbox {
+    grid-column: 1 / 3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+form #submit {
+    grid-column: 1 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form #submit input, form #cancel input {
+    width: 100px;
+    height: 25px;
+    background-color: #120A0B;
+    color: #FFF887;
+    border: none;
+    border-radius: 10px;
+}
+
+form #submit input:hover, form #cancel input:hover {
+    background-color: #261B50;
+    cursor: pointer;
+}
+
+form #cancel {
+    grid-column: 2 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
